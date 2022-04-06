@@ -8,6 +8,6 @@ if ! command -v carthage > /dev/null; then
     exit 1
 fi
 
-Carthage update nimble --platform iOS --cache-builds
+Carthage update nimble --platform iOS --cache-builds --use-xcframeworks
 
 exit 0
