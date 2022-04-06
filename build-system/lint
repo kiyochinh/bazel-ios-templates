@@ -3,7 +3,7 @@
 set -xo pipefail
 
 if which swiftlint >/dev/null; then
-    /usr/local/bin/swiftlint lint --config ../.swiftlint.yml ../App ../modules
+    /usr/local/bin/swiftlint lint --config ../../.swiftlint.yml ../../App ../../modules
 else
     echo "warning: Swiftlint not installed, please download from https://github.com/realm/SwiftLint"
 fi
