@@ -1,0 +1,13 @@
+{
+  "configDefaults" : {
+    "optionSet" : {
+
+    }
+  },
+  "packages" : [
+    "App",
+    "modules/Logging"
+  ],
+  "projectName" : "AppBazel",
+  "workspaceRoot" : "../../.."
+}

@@ -1,0 +1,69 @@
+{
+  "additionalFilePaths" : [
+    "App/BUILD",
+    "modules/Logging/BUILD"
+  ],
+  "buildTargets" : [
+    "//App:MyApp",
+    "//App:MyAppLibTests"
+  ],
+  "optionSet" : {
+    "BazelBuildOptionsDebug" : {
+      "p" : "--config debug --define environment=develop"
+    },
+    "BazelBuildOptionsRelease" : {
+      "p" : "--config debug --define environment=develop"
+    },
+    "BazelBuildStartupOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "CommandlineArguments" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "PreBuildPhaseRunScript" : {
+      "t" : {
+        "//App:MyApp" : "../../build-system/lint"
+      }
+    },
+    "ProjectGenerationBazelStartupOptions" : {
+      "p" : "$(inherited)"
+    },
+    "ProjectPrioritizesSwift" : {
+      "p" : "YES"
+    },
+    "SwiftForcesdSYMs" : {
+      "p" : "YES"
+    },
+    "TestActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPreActionScript" : {
+      "p" : "$(inherited)"
+    }
+  },
+  "projectName" : "AppBazel",
+  "sourceFilters" : [
+    "App/Resources",
+    "App/Resources/Base.lproj",
+    "App/Scenes",
+    "App/Supports",
+    "App/Tests",
+    "modules",
+    "modules/Logging"
+  ]
+}

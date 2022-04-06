@@ -1,0 +1,16 @@
+# Build generated
+/bazel-*
+
+# Downloaded bazel
+**/*/bazel
+
+# Tulsi user config
+**/*.tulsiconf-user
+
+# Xcode
+**/*.xcodeproj
+**/*.xcworkspace
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build

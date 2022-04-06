@@ -1,0 +1,60 @@
+{
+  "additionalFilePaths" : [
+    "App/BUILD",
+    "modules/Logging/BUILD"
+  ],
+  "buildTargets" : [
+    "//App:MyApp",
+    "//App:MyAppLibTests"
+  ],
+  "optionSet" : {
+    "BazelBuildOptionsDebug" : {
+      "p" : "--config release --define environment=production"
+    },
+    "BazelBuildOptionsRelease" : {
+      "p" : "--config release --define environment=production"
+    },
+    "BazelBuildStartupOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "CommandlineArguments" : {
+      "p" : "$(inherited)"
+    },
+    "EnvironmentVariables" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "ProjectGenerationBazelStartupOptions" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPreActionScript" : {
+      "p" : "$(inherited)"
+    }
+  },
+  "projectName" : "AppBazel",
+  "sourceFilters" : [
+    "App",
+    "App/Scenes",
+    "App/Supports",
+    "App/Tests",
+    "modules",
+    "modules/Logging"
+  ]
+}
