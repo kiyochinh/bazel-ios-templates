@@ -1,0 +1,13 @@
+#!/bin/bash -eu
+
+BAZEL=tools/bazelw
+
+echo "🐢 Starting setup project ..."
+
+$BAZEL clean --expunge
+$BAZEL build @Alamofire//:Alamofire
+$BAZEL build @IQKeyboardManager//:IQKeyboardManager
+$BAZEL build @ObjectMapper//:ObjectMapper
+$BAZEL build @RxSwift//:RxSwift
+
+exit 0

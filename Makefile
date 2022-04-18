@@ -3,8 +3,8 @@
 
 BAZEL=tools/bazelw
 
-setup:
-	build-system/setup
+install:
+	build-system/install
 
 build:
 	$(BAZEL) build //App:MyApp
