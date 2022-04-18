@@ -6,6 +6,8 @@
   },
   "packages" : [
     "App",
+    "Pods/Alamofire",
+    "Pods/RxSwift",
     "modules/Logging"
   ],
   "projectName" : "AppBazel",

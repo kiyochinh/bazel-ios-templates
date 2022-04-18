@@ -12,6 +12,11 @@ application(
         "//App/Resources:Assets"
     ],
     deps = [
+        "@Alamofire//:Alamofire",
+        "@IQKeyboardManager//:IQKeyboardManager",
+        "@ObjectMapper//:ObjectMapper",
+        "@RxSwift//:RxSwift",
+        "@RxSwift//:RxCocoa",
         "//modules/Logging:TLLogging",
     ],
 )
