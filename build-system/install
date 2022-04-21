@@ -2,9 +2,9 @@
 
 BAZEL=tools/bazelw
 
-echo "🐢 Starting setup project ..."
+echo "🐢 Start fetching and installing third-party..."
 
-$BAZEL clean --expunge
+# $BAZEL clean --expunge
 $BAZEL build @Alamofire//:Alamofire
 $BAZEL build @IQKeyboardManager//:IQKeyboardManager
 $BAZEL build @ObjectMapper//:ObjectMapper
