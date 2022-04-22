@@ -5,23 +5,23 @@ load(
 )
 
 load(
-    "@build_bazel_rules_apple//apple:apple.bzl", 
+    "@build_bazel_rules_apple//apple:apple.bzl",
     "apple_dynamic_framework_import",
     "apple_static_framework_import",
 )
 
 load(
-    "@build_bazel_rules_swift//swift:swift.bzl", 
+    "@build_bazel_rules_swift//swift:swift.bzl",
     "swift_library",
 )
 
 load(
-    "//build-system:configs.bzl", 
+    "//build-system:configs.bzl",
     "swift_library_compiler_flags",
 )
 
 load(
-    "//build-system:constants.bzl", 
+    "//build-system:constants.bzl",
     "SWIFT_VERSION",
     "MINIMUM_OS_VERSION",
     "PRODUCT_BUNDLE_IDENTIFIER_PREFIX",
@@ -50,7 +50,7 @@ def prebuilt_static_framework(
     )
 
 def swift_unit_test(
-    name, 
+    name,
     srcs = [],
     deps = [],
     visibility = ["//visibility:public"],
@@ -65,9 +65,10 @@ def swift_unit_test(
     )
 
     ios_unit_test(
-        name = name + "Tests",
+        name = "MyAppTests",
         deps = [test_lib_name],
         minimum_os_version = MINIMUM_OS_VERSION,
+        test_host = "//App:MyApp",
         visibility = visibility,
     )
 
@@ -85,10 +86,10 @@ def first_party_library(
         srcs = native.glob(["Resources/**/*"]),
         visibility = ["//visibility:public"],
     )
-    
+
     swift_unit_test(
         name = name,
-        srcs = native.glob(["Tests/**/*.swift"]),
+        srcs = native.glob(["MyAppTests/**/*.swift"]),
         deps = test_deps,
     )
 

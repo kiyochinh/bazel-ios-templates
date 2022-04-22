@@ -1,11 +1,12 @@
 {
   "additionalFilePaths" : [
     "App/BUILD",
+    "build-system/BUILD",
     "modules/Logging/BUILD"
   ],
   "buildTargets" : [
     "//App:MyApp",
-    "//App:MyAppLibTests"
+    "//App:MyAppTests"
   ],
   "optionSet" : {
     "BazelBuildOptionsDebug" : {
@@ -19,6 +20,9 @@
     },
     "BazelBuildStartupOptionsRelease" : {
       "p" : "$(inherited)"
+    },
+    "ProjectGenerationPlatformConfiguration" : {
+      "p" : "x86_64"
     },
     "BuildActionPostActionScript" : {
       "p" : "$(inherited)"
@@ -56,14 +60,16 @@
       "p" : "$(inherited)"
     }
   },
-  "projectName" : "AppBazel",
+  "projectName" : "MyApp",
   "sourceFilters" : [
+    "App/...",
     "App/Resources",
     "App/Resources/Base.lproj",
     "App/Scenes",
     "App/Supports",
-    "App/Tests",
-    "modules",
+    "App/MyAppTests",
+    "build-system",
+    "modules/...",
     "modules/Logging"
   ]
 }

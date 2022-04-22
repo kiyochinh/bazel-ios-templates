@@ -1,11 +1,12 @@
 {
   "additionalFilePaths" : [
     "App/BUILD",
+    "build-system/BUILD",
     "modules/Logging/BUILD"
   ],
   "buildTargets" : [
     "//App:MyApp",
-    "//App:MyAppLibTests"
+    "//App:MyAppTests"
   ],
   "optionSet" : {
     "BazelBuildOptionsDebug" : {
@@ -48,13 +49,15 @@
       "p" : "$(inherited)"
     }
   },
-  "projectName" : "AppBazel",
+  "projectName" : "MyApp",
   "sourceFilters" : [
-    "App",
+    "App/...",
+    "App/MyAppTests",
+    "App/Resources",
     "App/Scenes",
     "App/Supports",
-    "App/Tests",
-    "modules",
+    "build-system",
+    "modules/...",
     "modules/Logging"
   ]
 }

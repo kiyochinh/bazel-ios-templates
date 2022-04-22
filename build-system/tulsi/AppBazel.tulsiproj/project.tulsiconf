@@ -6,10 +6,9 @@
   },
   "packages" : [
     "App",
-    "Pods/Alamofire",
-    "Pods/RxSwift",
+    "build-system",
     "modules/Logging"
   ],
-  "projectName" : "AppBazel",
+  "projectName" : "MyApp",
   "workspaceRoot" : "../../.."
 }
