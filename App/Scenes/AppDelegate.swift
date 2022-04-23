@@ -1,4 +1,5 @@
 import UIKit
+import IQKeyboardManager
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {

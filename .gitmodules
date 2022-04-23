@@ -1,0 +1,15 @@
+[submodule "third-party/Alamofire/Sources"]
+	path = third-party/Alamofire/Sources
+	url = https://github.com/Alamofire/Alamofire
+[submodule "third-party/IQKeyboardManager/Sources"]
+	path = third-party/IQKeyboardManager/Sources
+	url = https://github.com/hackiftekhar/IQKeyboardManager
+[submodule "third-party/Kingfisher/Sources"]
+	path = third-party/Kingfisher/Sources
+	url = https://github.com/onevcat/Kingfisher
+[submodule "third-party/ObjectMapper/Sources"]
+	path = third-party/ObjectMapper/Sources
+	url = https://github.com/tristanhimmelman/ObjectMapper
+[submodule "third-party/SnapKit/Sources"]
+	path = third-party/SnapKit/Sources
+	url = https://github.com/SnapKit/SnapKit

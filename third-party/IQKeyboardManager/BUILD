@@ -4,7 +4,7 @@ swift_library(
     name = "IQKeyboardManager",
     module_name = "IQKeyboardManager",
     srcs = glob(
-        ["IQKeyboardManagerSwift/**/*.swift"]
+        ["Sources/IQKeyboardManagerSwift/**/*.swift"]
     ),
     visibility = ["//visibility:public"],
 )

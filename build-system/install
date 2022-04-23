@@ -5,9 +5,7 @@ BAZEL=tools/bazelw
 echo "🐢 Start fetching and installing third-party..."
 
 # $BAZEL clean --expunge
-$BAZEL build @Alamofire//:Alamofire
-$BAZEL build @IQKeyboardManager//:IQKeyboardManager
-$BAZEL build @ObjectMapper//:ObjectMapper
-$BAZEL build @RxSwift//:RxSwift
+git submodule update
+# $BAZEL build @Alamofire//:Alamofire
 
 exit 0

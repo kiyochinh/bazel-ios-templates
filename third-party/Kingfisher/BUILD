@@ -1,10 +1,10 @@
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 swift_library(
-    name = "Alamofire",
+    name = "Kingfisher",
     srcs = glob([
-        "Sources/Source/**/*.swift",
+        "Sources/Sources/**/*.swift",
     ]),
-    module_name = "Alamofire",
+    module_name = "Kingfisher",
     visibility = ["//visibility:public"],
 )

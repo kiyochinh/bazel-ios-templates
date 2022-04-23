@@ -15,6 +15,9 @@ If you want to generate the Xcode project, you will need to install [Tulsi](http
 
 ## Usage
 
+Add another third-party
+> git submodule add https://github.com/Alamofire/Alamofire third-part/Alamofire/Sources
+
 To build the iOS app and generate an IPA file you will run:
 
 > $ make build
