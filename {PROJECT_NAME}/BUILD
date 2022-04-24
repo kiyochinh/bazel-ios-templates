@@ -3,13 +3,13 @@ load("//build-system:custom_rules.bzl", "application")
 licenses(["notice"])
 
 application(
-    name = "MyApp",
-    infoplist = "Supports/Info.plist",
+    name = "{PROJECT_NAME}",
+    infoplist = "Configurations/Plists/Info.plist",
     app_icons = [
-        "//App/Resources:AppIcon",
+        "//{PROJECT_NAME}/Resources:AppIcon",
     ],
     resources = [
-        "//App/Resources:Assets"
+        "//{PROJECT_NAME}/Resources:Assets"
     ],
     deps = [
         "//third-party/Alamofire",

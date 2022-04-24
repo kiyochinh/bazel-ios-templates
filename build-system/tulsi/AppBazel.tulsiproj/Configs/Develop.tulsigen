@@ -1,12 +1,12 @@
 {
   "additionalFilePaths" : [
-    "App/BUILD",
+    "{PROJECT_NAME}/BUILD",
     "build-system/BUILD",
     "modules/Logging/BUILD"
   ],
   "buildTargets" : [
-    "//App:MyApp",
-    "//App:MyAppTests"
+    "//{PROJECT_NAME}:{PROJECT_NAME}",
+    "//{PROJECT_NAME}:{PROJECT_NAME}Tests"
   ],
   "optionSet" : {
     "BazelBuildOptionsDebug" : {
@@ -41,7 +41,7 @@
     },
     "PreBuildPhaseRunScript" : {
       "t" : {
-        "//App:MyApp" : "../../build-system/lint"
+        "//{PROJECT_NAME}:{PROJECT_NAME}" : "../../build-system/lint"
       }
     },
     "ProjectGenerationBazelStartupOptions" : {
@@ -60,14 +60,14 @@
       "p" : "$(inherited)"
     }
   },
-  "projectName" : "MyApp",
+  "projectName" : "{PROJECT_NAME}",
   "sourceFilters" : [
-    "App/...",
-    "App/Resources",
-    "App/Resources/Base.lproj",
-    "App/Scenes",
-    "App/Supports",
-    "App/MyAppTests",
+    "{PROJECT_NAME}/...",
+    "{PROJECT_NAME}/Resources",
+    "{PROJECT_NAME}/Resources/Base.lproj",
+    "{PROJECT_NAME}/Scenes",
+    "{PROJECT_NAME}/Supports",
+    "{PROJECT_NAME}/{PROJECT_NAME}Tests",
     "build-system",
     "modules/...",
     "modules/Logging"

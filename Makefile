@@ -3,17 +3,20 @@
 
 BAZEL=tools/bazelw
 
+init:
+	sh build-system/make.sh --bundle-id com.kiyochinh --project-name KiyoChinh
+
 install:
 	build-system/install
 
 build:
-	$(BAZEL) build //App:MyApp
+	$(BAZEL) build //{PROJECT_NAME}:{PROJECT_NAME}
 
 test:
 	$(BAZEL) test //...
 
 run:
-	$(BAZEL) run //App:MyApp
+	$(BAZEL) run //{PROJECT_NAME}:{PROJECT_NAME}
 
 bootstrap: setup build test run
 	echo "Done"

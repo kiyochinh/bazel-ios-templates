@@ -6,8 +6,7 @@ opt_in_rules:
   - closure_end_indentation
   - closure_spacing
   - explicit_init
-  - first_where
-  - nimble_operator
+  - first_wheres
   - number_separator
   - object_literal
   - operator_usage_whitespace
