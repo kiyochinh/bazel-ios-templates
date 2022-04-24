@@ -129,14 +129,11 @@ then
     tuist install ${TUIST_VERSION}
 fi
 
-# Generate with tuist
-echo "Tuist found"
-rm -f .git/index
-make build
-echo "✅  Completed"
-
 # Install dependencies
 echo "Installing pod dependencies"
+rm -f .git/index
+make install
+make build
 make project
 echo "✅  Completed"
 

@@ -5,7 +5,10 @@ BAZEL=tools/bazelw
 echo "🐢 Start fetching and installing third-party..."
 
 # $BAZEL clean --expunge
-git submodule update
-# $BAZEL build @Alamofire//:Alamofire
+git submodule add https://github.com/Alamofire/Alamofire third-party/Alamofire/Sources
+git submodule add https://github.com/hackiftekhar/IQKeyboardManager third-party/IQKeyboardManager/Sources
+git submodule add https://github.com/onevcat/Kingfisher third-party/Kingfisher/Sources
+git submodule add https://github.com/tristanhimmelman/ObjectMapper third-party/ObjectMapper/Sources
+git submodule add https://github.com/SnapKit/SnapKit third-party/SnapKit/Sources
 
 exit 0
