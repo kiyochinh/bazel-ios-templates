@@ -1,4 +1,4 @@
-![bazel-ios-cover](https://user-images.githubusercontent.com/81249662/164981710-d519ff34-cef3-403d-b894-99947a5cc8b9.png)
+![bazel-ios-cover](https://user-images.githubusercontent.com/81249662/164982942-93ad08eb-e807-4447-8a51-a881010238ce.png)
 
 # About
 
