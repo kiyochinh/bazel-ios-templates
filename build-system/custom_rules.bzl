@@ -65,10 +65,10 @@ def swift_unit_test(
     )
 
     ios_unit_test(
-        name = "MyAppTests",
+        name = "{PROJECT_NAME}Tests",
         deps = [test_lib_name],
         minimum_os_version = MINIMUM_OS_VERSION,
-        test_host = "//App:MyApp",
+        test_host = "//{PROJECT_NAME}:{PROJECT_NAME}",
         visibility = visibility,
     )
 
@@ -89,14 +89,14 @@ def first_party_library(
 
     swift_unit_test(
         name = name,
-        srcs = native.glob(["MyAppTests/**/*.swift"]),
+        srcs = native.glob(["{PROJECT_NAME}Tests/**/*.swift"]),
         deps = test_deps,
     )
 
     swift_library(
         name = name,
         module_name = name,
-        srcs = native.glob(["Scenes/**/*.swift"]),
+        srcs = native.glob(["Sources/**/*.swift"]),
         deps = deps,
         copts = swift_compiler_flags + swift_library_compiler_flags() + ["-swift-version", swift_version],
         data = [":Resources"],

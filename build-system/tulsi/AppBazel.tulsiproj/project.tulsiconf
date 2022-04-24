@@ -5,10 +5,10 @@
     }
   },
   "packages" : [
-    "App",
+    "{PROJECT_NAME}",
     "build-system",
     "modules/Logging"
   ],
-  "projectName" : "MyApp",
+  "projectName" : "{PROJECT_NAME}",
   "workspaceRoot" : "../../.."
 }

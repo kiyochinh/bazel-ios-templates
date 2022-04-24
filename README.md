@@ -37,12 +37,12 @@ To generate the xcode project from terminal you need to run:
 
 This command generate a project on `Develop` environment, if you want to change it, you could run: 
 
-> $ build-system/tulsigen build-system/tulsi/AppBazel.tulsiproj Production
+> $ build-system/tulsigen build-system/tulsi/{PROJECT_NAME}Bazel.tulsiproj Production
 
 ## Advanced usage 
 
 If you want to build a release version with `Production` envinronment you need pass the following options:
 
-> $ tools/bazelw build //App:MyApp --config release --define envinronment=production
+> $ tools/bazelw build //{PROJECT_NAME}:{PROJECT_NAME} --config release --define envinronment=production
 
 Maybe you need to config the `ios_signing_cert_name` on `.bazelrc`, and specify the `provisioning_profile` to handle the signing of the IPA file.
