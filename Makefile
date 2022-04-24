@@ -4,7 +4,7 @@
 BAZEL=tools/bazelw
 
 init:
-	sh build-system/make.sh --bundle-id com.kiyochinh --project-name KiyoChinh
+	sh build-system/make.sh --bundle-id $(BUNDLE_ID) --project-name $(PROJECT_NAME)
 
 install:
 	build-system/install
