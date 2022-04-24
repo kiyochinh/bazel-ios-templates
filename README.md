@@ -1,3 +1,5 @@
+![bazel-ios-cover](https://user-images.githubusercontent.com/81249662/164980506-50209822-f904-46fc-81c7-2ac05abb5cbc.png)
+
 # About
 
 Hello guys, this is example project how to migrating to *Bazel* with iOS application. If you want to know how it works and how to develop, please check the [article](https://flare.build/migration-guides/ios-hearts-bazel)
