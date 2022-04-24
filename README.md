@@ -11,6 +11,8 @@ To build and test the project you need the following dependencies:
 
 If you want to generate the Xcode project, you will need to install [Tulsi](https://github.com/bazelbuild/tulsi). You will need to setup the environment with carthage before build any target. I've built a script to automatizate this: 
 
+> $ make init BUNDLE_ID=com.myapp PROJECT_NAME=MyApp
+
 > $ make setup
 
 ## Usage
